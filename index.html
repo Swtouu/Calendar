@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Calendar</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- TOP -->
+
+    <main class="app">
+      <div id="container">
+        <nav>
+          <p class="welcome">Calendar Schedule</p>
+          <img src="logo.png" alt="Logo" class="logo" />
+        </nav>
+        <div id="header">
+          <div id="monthDisplay"></div>
+          <div>
+            <button id="backButton">Back</button>
+            <button id="nextButton">Next</button>
+          </div>
+        </div>
+
+        <div id="weekdays">
+          <div>Sunday</div>
+          <div>Monday</div>
+          <div>Tuesday</div>
+          <div>Wednesday</div>
+          <div>Thursday</div>
+          <div>Friday</div>
+          <div>Saturday</div>
+        </div>
+
+        <div id="calendar"></div>
+      </div>
+
+      <div id="newEvent">
+        <h2>Event</h2>
+
+        <input id="inputEvent" placeholder="Event Title" />
+        <input id="timeEvent" type="time" name="timeEvent" />
+
+        <button id="addButton">Add</button>
+        <button id="cancelButton">Cancel</button>
+      </div>
+
+      <div id="deleteEventModal">
+        <h1>Event</h1>
+
+        <p id="eventText"></p>
+        <p id="timeText"></p>
+
+        <button id="deleteButton">Delete</button>
+        <button id="closeButton">Close</button>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
